@@ -28,7 +28,7 @@
         var usernameField = document.getElementById("username");
         
         var msg = msgField.value;
-        var username = username.value;
+        var username = usernameField.value;
 
         socket.emit("msg", {msg: msg, username: username});
     }
